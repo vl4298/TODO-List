@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AllListViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property DataModel *dataModel;
 
+-(void)saveData;
+
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification;
 
 @end
 
